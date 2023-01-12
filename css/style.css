@@ -3,6 +3,7 @@
 @import "./utilities/colors.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/intro.css";
@@ -15,3 +16,6 @@
 
 /* Bikes */
 @import "./bikes/bike-list.css";
+
+/* Insurances */
+@import "./insurances/insurances.css";
