@@ -1,0 +1,83 @@
+.technology-bg {
+  background-color: var(--color-1);
+  box-shadow: inset 0 5rem var(--color-12), inset 0 -5rem var(--color-12);
+}
+
+.technology {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.technology-img img {
+  object-fit: cover;
+  object-position: left;
+  width: 100%;
+  height: 100%;
+}
+
+.technology-content {
+  padding-top: 10rem;
+  padding-bottom: 10rem;;
+}
+
+.technology-content > span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.technology-content h2 {
+  margin-bottom: 2rem;
+}
+
+.technology-content > p {
+  margin-bottom: 1.5rem;
+}
+
+.technology a {
+  margin-bottom: 5rem;
+}
+
+.technology-features {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.technology-features h3 {
+  width: max-content;
+  margin-bottom: 0.5rem;
+}
+
+.technology-features img {
+  width: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .technology-bg {
+    box-shadow: initial;
+  }
+  
+  .technology {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-content {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .technology-img {
+    display: none;
+  }
+
+  .technology a {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .technology-features {
+    flex-direction: column;
+  }
+}

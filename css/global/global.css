@@ -5,7 +5,12 @@ body {
   padding-bottom: 600px;
 }
 
-h1, p, ul {
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
   margin: 0;
 }
 
@@ -22,4 +27,8 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}
+
+img[src$=".jpg"] {
+  border-radius: 0.25rem;
 }

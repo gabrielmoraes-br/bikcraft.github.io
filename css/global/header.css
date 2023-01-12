@@ -5,12 +5,10 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   gap: 1.25rem;
 }
 

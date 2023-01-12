@@ -1,0 +1,64 @@
+.bike-list {
+  padding-top: 3.75rem;
+  padding-bottom: 7.5rem;
+}
+
+.bike-list a {
+  display: block;
+}
+
+.bike-list img {
+  margin-bottom: 1rem;
+}
+
+.bike-list ul {
+  display: flex;
+  overflow-x: auto;
+  max-width: 1400px;
+  gap: 2.5rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  margin: 0 auto;
+}
+
+.bike-list li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bike-list li span {
+  padding-left: 1.25rem;
+}
+
+.bike-list h2 {
+  margin-bottom: 2.5rem;
+}
+
+.bike-list h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.bike-list h3::before {
+  display: inline-block;
+  content:'';
+  height: 0.5rem;
+  width: 0.75rem;
+  margin-right: 0.5rem;
+  background-color: var(--color-p1);
+  transition: width 0.2s;
+}
+
+.bike-list a:hover h3::before {
+  width: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .bike-list {
+    padding-bottom: 3.75rem;
+  }
+
+  .bike-list ul {
+    gap: 1.25rem;
+  }
+}
