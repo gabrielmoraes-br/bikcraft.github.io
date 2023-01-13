@@ -39,6 +39,25 @@
   background: var(--color-3);
 }
 
+.button.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.button.arrow::after {
+  display: inline-block;
+  content: '';
+  width: 1.125rem;
+  height: 0.625rem;
+  margin-left: 0.75rem;
+  transition: transform 0.2s;
+  background-image: url("../../img/icons/seta.svg");
+}
+
+.button.arrow:hover::after {
+  transform: translateX(0.25rem);
+}
+
 .link {
   display: inline-block;
   font: 500 1.5rem/1.5 'Poppins', sans-serif;
@@ -56,4 +75,28 @@
 
 .link:hover {
   color: var(--color-12)
+}
+
+
+/* Pages title */
+.title-bg {
+  background-color: var(--color-1);
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.title p {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 800px) {
+  .title {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .title p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
 }
