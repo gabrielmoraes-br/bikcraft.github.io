@@ -13,15 +13,24 @@
 
 /* Utilities */
 @import "./utilities/components.css";
+@import "./utilities/form.css";
 
 /* Bikes */
 @import "./bikes/bike-list.css";
 @import "./bikes/bikes.css";
 
+/* Bike */
+@import "./bike/bike.css";
+@import "./bike/insurance.css";
+
 /* Insurances */
 @import "./insurances/insurances.css";
 @import "./insurances/features.css";
 @import "./insurances/faq.css";
+
+/* Contact */
+@import "./contact/contact.css";
+@import "./contact/shops.css";
 
 /* Terms */
 @import "./terms/terms.css";
