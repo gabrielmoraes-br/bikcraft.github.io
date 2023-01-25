@@ -14,12 +14,14 @@
 }
 
 .contact-data {
-  background: var(--color-0);
+  background: var(--color-0) url('../../img/dec/bottom-left.svg')
+  no-repeat bottom 1.25rem left 1.25rem;
   border-radius: 0.3125rem 0 0 0.3125rem;
 }
 
 .contact-form {
-  background: var(--color-12);
+  background: var(--color-12) url('../../img/dec/bottom-right.svg')
+  no-repeat bottom 1.25rem right 1.25rem;
   border-radius: 0 0.3125rem 0.3125rem 0;
 }
 
@@ -76,6 +78,7 @@
   }
   .contact-data {
     border-radius: 0.3125rem 0.3125rem 0 0;
+    background: var(--color-0);
   }
   .contact-form {
     border-radius: 0 0 0.3125rem 0.3125rem;

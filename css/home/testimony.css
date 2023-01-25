@@ -15,6 +15,8 @@
 .testimony-content {
   align-self: end;
   padding: 2.5rem 2.5rem 5rem 5rem;
+  background: url('../../img/dec/bottom-right.svg')
+  no-repeat bottom 2.5rem right 2.5rem;
 }
 
 .testimony-content p {
@@ -40,6 +42,12 @@
 
 .testimony p::after {
   content: '”';
+}
+
+@media (min-width: 1200px) {
+  .testimony img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {
