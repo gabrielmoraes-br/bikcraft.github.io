@@ -35,7 +35,8 @@
   background: var(--color-12);
 }
 
-.header-nav a:hover::after {
+.header-nav a:hover::after,
+.header-nav a.enabled::after {
   width: 100%;
 }
 

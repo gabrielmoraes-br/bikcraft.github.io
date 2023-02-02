@@ -16,15 +16,19 @@
   background-color: var(--color-11);
 }
 
-.faq dt {
+.faq button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   cursor: pointer;
   align-items: center;
   gap: 0.5rem;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
 }
 
-.faq dt::before {
+.faq button::before {
   display: inline-block;
   content: '';
   width: 0.75rem;
@@ -32,7 +36,7 @@
   background-color: var(--color-p1);
 }
 
-.faq dt::after {
+.faq button::after {
   display: inline-block;
   content: '';
   width: 0.875rem;
@@ -41,7 +45,8 @@
   transition: 0.3s;
 }
 
-.faq dt:hover::after {
+.faq button:hover::after,
+.faq button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
@@ -49,6 +54,14 @@
   padding-left: 1.25rem;
   padding-top: 1rem;
   max-width: 80ch;
+}
+
+.faq dd {
+  display: none;
+}
+
+.faq dd.enabled {
+  display: block;
 }
 
 @media (max-width: 800px) {
