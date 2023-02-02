@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="insurances">
@@ -41,7 +42,7 @@
     </div>
 
     <div class="insurances container">
-      <div class="insurance-item">
+      <div class="insurance-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl color-6">PRATA</h3>
         <span class="font-1-xl color-12">R$ 199 <span class="font-1-xs color-6">mensal</span></span>
         <ul class="font-2-m color-12">
@@ -53,7 +54,7 @@
         <a class="button secondary" href="./budget.html?type=insurance&product=silver">Inscreva-se</a>
       </div>
 
-      <div class="insurance-item">
+      <div class="insurance-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl color-p1">OURO</h3>
         <span class="font-1-xl color-12">R$ 299 <span class="font-1-xs color-6">mensal</span></span>
         <ul class="font-2-m color-12">
@@ -176,6 +177,7 @@
     </div>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

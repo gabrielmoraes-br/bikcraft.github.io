@@ -62,3 +62,9 @@ function setImage(event) {
 }
 
 gallery.forEach(selectImage);
+
+// Animation
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

@@ -56,11 +56,11 @@
   max-width: 80ch;
 }
 
-.faq dd {
+.js .faq dd {
   display: none;
 }
 
-.faq dd.enabled {
+.js .faq dd.enabled {
   display: block;
 }
 
