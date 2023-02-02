@@ -9,16 +9,17 @@
   <title>Orçamento | Bikcraft</title>
   <meta name="description" content="Orçamento.">
 
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<body id="budget">
+<body id="quote">
 
   <header class="header-bg">
     <div class="header container">
@@ -40,8 +41,8 @@
         <h1 class="font-1-xxl color-12">solicite um orçamento<span class="color-p1">.</span></h1>
       </div>
     </div>
-    <form class="budget container" action="./budget.html">
-      <div class="budget-product">
+    <form class="quote container" action="./quote.html">
+      <div class="quote-product">
         <h2 class="font-1-xs color-7">Bikcraft ou Seguro?</h2>
 
         <input type="radio" name="type" value="bikcraft" id="bikcraft">
@@ -50,12 +51,12 @@
         <input type="radio" name="type" value="insurance" id="insurance">
         <label for="insurance">Seguro</label>
 
-        <div class="budget-content" id="budget-bikcraft">
+        <div class="quote-content" id="quote-bikcraft">
           <h2 class="font-1-xs color-7">Escolha a sua</h2>
 
           <input type="radio" name="product" value="nimbus" id="nimbus">
           <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
-          <div class="budget-features">
+          <div class="quote-features">
             <ul class="font-1-xs color-4">
               <li><img src="./img/icons/eletrica.svg" width="32" height="32" alt=""> Motor Elétrico</li>
               <li><img src="./img/icons/carbono.svg" width="32" height="32" alt=""> Fibra de Carbono</li>
@@ -67,7 +68,7 @@
 
           <input type="radio" name="product" value="magic" id="magic">
           <label for="magic">Magic Might <span>R$ 2499</span></label>
-          <div class="budget-features">
+          <div class="quote-features">
             <ul class="font-1-xs color-4">
               <li><img src="./img/icons/eletrica.svg" width="32" height="32" alt=""> Motor Elétrico</li>
               <li><img src="./img/icons/carbono.svg" width="32" height="32" alt=""> Fibra de Carbono</li>
@@ -79,7 +80,7 @@
 
           <input type="radio" name="product" value="nebula" id="nebula">
           <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
-          <div class="budget-features">
+          <div class="quote-features">
             <ul class="font-1-xs color-4">
               <li><img src="./img/icons/eletrica.svg" width="32" height="32" alt=""> Motor Elétrico</li>
               <li><img src="./img/icons/carbono.svg" width="32" height="32" alt=""> Fibra de Carbono</li>
@@ -90,7 +91,7 @@
           </div>
         </div>
 
-        <div class="budget-content" id="budget-insurance">
+        <div class="quote-content" id="quote-insurance">
           <h2 class="font-1-xs color-7">Escolha o plano</h2>
 
           <input type="radio" name="product" value="silver" id="silver">
@@ -101,7 +102,7 @@
         </div>
 
       </div>
-      <div class="budget-data form">
+      <div class="quote-data form">
         <h2 class="font-1-xs color-3 col-2">dados pessoais</h2>
         <div>
           <label for="name">Nome</label>
